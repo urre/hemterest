@@ -2,6 +2,8 @@
 
 Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of image slider.
 
+![Hemterest](https://cloud.githubusercontent.com/assets/307676/23555701/3c8cd698-002a-11e7-8f4b-565a14e4215b.png)
+
 ## Install
 
 + Clone repo or download zip
