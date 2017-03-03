@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Hemterest",
+  "description": "Hemnet pinterest style",
+  "version": "0.1.0",
+  "permissions": [
+    "*://*.hemnet.se/*"
+  ],
+  "web_accessible_resources": [
+    "src/css/hemterest.css"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.hemnet.se/*"
+      ],
+      "js": [
+        "src/js/hemterest.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*.hemnet.se/*"
+      ],
+      "css": [
+        "src/css/hemterest.css"
+      ]
+    }
+  ]
+}
