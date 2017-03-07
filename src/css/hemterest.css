@@ -1,11 +1,11 @@
-.wrapper {
+.hemterest-wrapper {
 	margin: 0 -100%;
 	margin: 0 calc(50% - 50vw);
 	column-width: 500px;
 	column-gap: 10px;
 }
 
-.wrapper figure {
+.hemterest-wrapper figure {
 	display: block;
 	border-radius: 2px;
 	border: 1px solid #d9d9d9;
@@ -25,17 +25,17 @@
 }
 
 @media and (max-width: 40em) {
-	.wrapper figure {
+	.hemterest-wrapper figure {
 		height: 370px;
 	}
 }
 
-.wrapper figure:hover {
+.hemterest-wrapper figure:hover {
 	box-shadow: 0 4px 8px rgba(0,0,0,.2);
 	transform: translateY(-2%);
 }
 
-.wrapper figure img {
+.hemterest-wrapper figure img {
 	max-width: 100%;
 	width: 100%;
 	height: auto;
@@ -43,16 +43,16 @@
 }
 
 @media screen and (max-width: 40em) {
-	.wrapper { 
+	.hemterest-wrapper { 
 		column-gap: 0px; 
 	}
-	.wrapper figure { 
+	.hemterest-wrapper figure { 
 		width: 100%;
 		height: auto;
 	}
 }
 
-.wrapper .hemterest-price {
+.hemterest-wrapper .hemterest-price {
 	background-color: #1493BC;
 	color: white;
 	font: 700 3.5rem/1 Hemnet Slab,Georgia,Times New Roman,Times,Lucidabright,serif;
