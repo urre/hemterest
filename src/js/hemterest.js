@@ -1,32 +1,32 @@
 const findImages = () => {
-    const imgs = document.getElementsByTagName('img')
-    let imgSrcs = []
-    for(let i in imgs) {
-        imgs[i].src && imgs[i].src.includes('itemgallery') ? imgSrcs.push(imgs[i].src) : ''
+    const images = document.getElementsByTagName('img')
+    let imageUrls = []
+    for(let image of images) {
+        image.src && image.src.includes('itemgallery') ? imageUrls.push(image.src) : ''
     }
 
-    return imgSrcs
+    return imageUrls
 }
 
 const addPrice = () => {
-    const priceFigure = document.createElement("figure")
-    const priceImage = document.createElement("p")
+    const priceFigure = document.createElement('figure')
+    const priceImage = document.createElement('p')
     priceImage.innerHTML = document.querySelector('.property__price').innerHTML
-    priceFigure.className = "hemterest-price"
+    priceFigure.classList.add('hemterest-price')
     priceFigure.appendChild(priceImage)
     return priceFigure
 }
 
-const addMarkup = (urls) => {
+const createGrid = (urls) => {
 
-    let wrapper = document.createElement("div")
-    wrapper.classList.add("wrapper")
+    const wrapper = document.createElement('div')
+    wrapper.classList.add('hemterest-wrapper')
     let figureSize = {}
 
-    for(let i in urls) {
-        const itemFigure = document.createElement("figure")
-        const itemImage = document.createElement("img")
-        itemImage.src = urls[i]
+    for(let url of urls) {
+        const itemFigure = document.createElement('figure')
+        const itemImage = document.createElement('img')
+        itemImage.src = url
         itemFigure.appendChild(itemImage)
         
         wrapper.appendChild(itemFigure)
@@ -37,4 +37,4 @@ const addMarkup = (urls) => {
  
 }
 
-addMarkup(findImages())
+createGrid(findImages())
