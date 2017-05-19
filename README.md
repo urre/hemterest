@@ -2,7 +2,7 @@
 
 Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider.
 
-![Hemterest](https://cloud.githubusercontent.com/assets/307676/23555701/3c8cd698-002a-11e7-8f4b-565a14e4215b.png)
+![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495183525/lt6xfweej0awk3fxqiyl.png)
 
 ## Install
 
@@ -14,6 +14,7 @@ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of th
 + Enjoy the improved [hemnet.se](http://hemnet.se)
 
 ### Changelog
++ 2017-05-19: Add ribbon to price field, css width fix for wrapper
 + 2017-03-03: First version released
 
 ### License
