@@ -1,3 +1,7 @@
+.page-wrapper {
+	overflow: visible !important;
+}
+
 .hemterest-wrapper {
 	margin: 0 -100%;
 	margin: 0 calc(50% - 50vw);
@@ -42,11 +46,11 @@
 	max-height: 100%;
 }
 
-@media screen and (max-width: 40em) {
-	.hemterest-wrapper { 
-		column-gap: 0px; 
+@media and (max-width: 40em) {
+	.hemterest-wrapper {
+		column-gap: 0px;
 	}
-	.hemterest-wrapper figure { 
+	.hemterest-wrapper figure {
 		width: 100%;
 		height: auto;
 	}
@@ -56,6 +60,18 @@
 	background-color: #1493BC;
 	color: white;
 	font: 700 3.5rem/1 Hemnet Slab,Georgia,Times New Roman,Times,Lucidabright,serif;
+	flex-direction: column;
+}
+
+.hemterest-wrapper .hemterest-price p {
+	margin-bottom: 0;
+}
+
+.hemterest-wrapper .hemterest-price .ribbon--ongoing-bidding {
+	font-weight: normal;
+	float: none;
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .carousel {

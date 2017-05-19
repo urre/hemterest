@@ -17,6 +17,12 @@ const addPrice = () => {
     return priceFigure
 }
 
+const cloneRibbon = () => {
+    const ribbon = document.querySelector('.ribbon--ongoing-bidding');
+    const ribbonClone = ribbon.cloneNode(true);
+    document.querySelector('.hemterest-price').appendChild(ribbonClone);
+}
+
 const createGrid = (urls) => {
 
     const wrapper = document.createElement('div')
@@ -28,13 +34,14 @@ const createGrid = (urls) => {
         const itemImage = document.createElement('img')
         itemImage.src = url
         itemFigure.appendChild(itemImage)
-        
+
         wrapper.appendChild(itemFigure)
     }
 
     wrapper.appendChild(addPrice())
     document.querySelector('#page-content').prepend(wrapper)
- 
+
 }
 
 createGrid(findImages())
+cloneRibbon()
