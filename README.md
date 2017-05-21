@@ -2,7 +2,7 @@
 
 Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider.
 
-![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495183525/lt6xfweej0awk3fxqiyl.png)
+![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495398154/ngxk1ca6rvjkfvqp0pnn.png)
 
 ## Install
 
