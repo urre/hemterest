@@ -9,18 +9,24 @@ const findImages = () => {
 }
 
 const addPrice = () => {
-    const priceFigure = document.createElement('figure')
-    const priceImage = document.createElement('p')
-    priceImage.innerHTML = document.querySelector('.property__price').innerHTML
-    priceFigure.classList.add('hemterest-price')
-    priceFigure.appendChild(priceImage)
-    return priceFigure
+
+    const lastImage = document.querySelector('.hemterest-wrapper > figure').parentElement.firstChild
+    const lastImageClone = lastImage.cloneNode(true)
+    document.querySelector('.hemterest-wrapper').appendChild(lastImageClone)
+
+    const priceTag = document.createElement('div')
+    priceTag.innerHTML = document.querySelector('.property__price').innerHTML
+    priceTag.classList.add('hemterest-price')
+
+    lastImageClone.appendChild(priceTag)
 }
 
 const cloneRibbon = () => {
-    const ribbon = document.querySelector('.ribbon--ongoing-bidding');
-    const ribbonClone = ribbon.cloneNode(true);
-    document.querySelector('.hemterest-price').appendChild(ribbonClone);
+    if(document.querySelector('.ribbon--ongoing-bidding')) {
+        const ribbon = document.querySelector('.ribbon--ongoing-bidding');
+        const ribbonClone = ribbon.cloneNode(true);
+        document.querySelector('.hemterest-price').appendChild(ribbonClone);
+    }
 }
 
 const createGrid = (urls) => {
@@ -38,10 +44,10 @@ const createGrid = (urls) => {
         wrapper.appendChild(itemFigure)
     }
 
-    wrapper.appendChild(addPrice())
     document.querySelector('#page-content').prepend(wrapper)
 
 }
 
 createGrid(findImages())
 cloneRibbon()
+addPrice()

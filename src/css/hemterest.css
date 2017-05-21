@@ -5,62 +5,84 @@
 .hemterest-wrapper {
 	margin: 0 -100%;
 	margin: 0 calc(50% - 50vw);
-	column-width: 500px;
-	column-gap: 10px;
-}
-
-.hemterest-wrapper figure {
-	display: block;
-	border-radius: 2px;
-	border: 1px solid #d9d9d9;
-	box-shadow: 0 1px 2px rgba(0,0,0,.15);
-	background-color: white;
-	padding: 1rem;
-	padding-bottom: 1rem;
-	transition: all .4s ease-in-out;
-	column-break-inside: avoid;
-	backface-visibility: hidden;
-	display: inline-block;
 	margin-bottom: 1rem;
-	height: 370px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	columns: 50% 4;
+	column-gap: 10px;
+
+
 }
 
-@media and (max-width: 40em) {
-	.hemterest-wrapper figure {
-		height: 370px;
+@media and (min-width: 60em) {
+	.hemterest-wrapper {
+		columns: 33.333% 3;
 	}
 }
 
-.hemterest-wrapper figure:hover {
-	box-shadow: 0 4px 8px rgba(0,0,0,.2);
-	transform: translateY(-2%);
+.hemterest-wrapper figure {
+	/*display: block;*/
+	border-radius: 2px;
+	/*border: 1px solid #d9d9d9;*/
+	/*box-shadow: 0 1px 2px rgba(0,0,0,.15);*/
+	background-color: white;
+	/*padding: 1rem;*/
+	/*padding-bottom: 1rem;*/
+	transition: all .4s ease-in-out;
+	column-break-inside: avoid;
+	backface-visibility: hidden;
+	/*vertical-align: top;*/
+	flex-basis: 50%;
+	width: 50%;
+	flex: 1 auto;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.hemterest-wrapper figure img {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+}
+
+@media (min-width: 40em) {
+	.hemterest-wrapper figure {
+		flex-basis: 33.333%;
+		width: 33.333%;
+	}
 }
 
 .hemterest-wrapper figure img {
 	max-width: 100%;
-	width: 100%;
 	height: auto;
-	max-height: 100%;
 }
 
-@media and (max-width: 40em) {
-	.hemterest-wrapper {
-		column-gap: 0px;
-	}
-	.hemterest-wrapper figure {
-		width: 100%;
-		height: auto;
-	}
+.hemterest-wrapper figure:last-child {
+	position: relative;
 }
 
-.hemterest-wrapper .hemterest-price {
-	background-color: #1493BC;
+.hemterest-wrapper figure:last-child div {
+	position: absolute;
+	background-color: rgba(0,0,0,.75);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 30%;
+	left: 0;
+	top: 0;
 	color: white;
-	font: 700 3.5rem/1 Hemnet Slab,Georgia,Times New Roman,Times,Lucidabright,serif;
-	flex-direction: column;
+	font-family: 'Hemnet Slab',Georgia,Times New Roman,Times,Lucidabright,serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+@media (min-width: 60em) {
+	.hemterest-wrapper figure:last-child div {
+		font-size: 3.5rem;
+	}
 }
 
 .hemterest-wrapper .hemterest-price p {
