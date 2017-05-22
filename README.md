@@ -1,8 +1,8 @@
-# Hemterest
+# Trello Deeptask
 
-Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider.
+Link to a task within a Trello card. Wip
 
-![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495398154/ngxk1ca6rvjkfvqp0pnn.png)
+![](https://res.cloudinary.com/urre/image/upload/v1495468708/bvikpjcxhfiaoljcxmc7.png)
 
 ## Install
 
@@ -11,12 +11,10 @@ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of th
 + Click Developer mode
 + Click Load unpacked extension
 + Navigate to the folder where you saved it
-+ Enjoy the improved [hemnet.se](http://hemnet.se)
++ Append `#list=1&task=2` to trello card urls
 
 ### Changelog
-+ 2017-05-21: Better handling of figure items, no heights in css. Nicer price design.
-+ 2017-05-19: Add ribbon to price field, css width fix for wrapper
-+ 2017-03-03: First version released
++ 2017-05-22: First crappy version released
 
 ### License
 
