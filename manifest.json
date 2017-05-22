@@ -1,30 +1,30 @@
 {
   "manifest_version": 2,
-  "name": "Deeptask",
-  "description": "Deeplink to Trello task in a card",
+  "name": "Hemterest",
+  "description": "Hemnet pinterest style",
   "version": "0.1.0",
   "permissions": [
-    "*://*.trello.com/*"
+    "*://*.hemnet.se/*"
   ],
   "web_accessible_resources": [
-    "src/css/deeptask.css"
+    "src/css/hemterest.css"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.trello.com/*"
+        "*://*.hemnet.se/*"
       ],
       "js": [
-        "src/js/deeptask.js"
+        "src/js/hemterest.js"
       ],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     },
     {
       "matches": [
-        "*://*.trello.com/*"
+        "*://*.hemnet.se/*"
       ],
       "css": [
-        "src/css/deeptask.css"
+        "src/css/hemterest.css"
       ]
     }
   ]
