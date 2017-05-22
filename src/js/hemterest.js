@@ -48,6 +48,8 @@ const createGrid = (urls) => {
 
 }
 
-createGrid(findImages())
-cloneRibbon()
-addPrice()
+if(document.querySelector('.property__container')) {
+    createGrid(findImages())
+    cloneRibbon()
+    addPrice()
+}
