@@ -1,12 +1,14 @@
 # Hemterest
 
-![icon](https://user-images.githubusercontent.com/307676/29468196-960c30ae-8443-11e7-8360-f13f000ebfbc.png)
+![icon](./src/icons/icon-48.png)
 
-Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider.
+Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider. For easier and faster overview of the default (up to) 6 images.
 
 ![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495398154/ngxk1ca6rvjkfvqp0pnn.png)
 
-## [Install from Google Web Store](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
+## Install from Google Web Store
++ [Install](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
++ + Enjoy the improved [hemnet.se](http://hemnet.se) object pages
 
 ### Install manually
 
@@ -15,7 +17,7 @@ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of th
 + Click Developer mode
 + Click Load unpacked extension
 + Navigate to the folder where you saved it
-+ Enjoy the improved [hemnet.se](http://hemnet.se)
++ Enjoy the improved [hemnet.se](http://hemnet.se) object pages
 
 ### Changelog
 + 2017-08-18: Published the Extension to Chrome Web Store

@@ -4,9 +4,12 @@ path = require('path')
 
 gulp.task('zip', function() {
 	return gulp
-		.src(['./src/css/**/*', './src/js/**/*', 'manifest.json'], {
-			base: '.'
-		})
+		.src(
+			['./src/css/hemterest.css', './src/js/hemterest.js', 'manifest.json'],
+			{
+				base: '.'
+			}
+		)
 		.pipe(zip('hemterest.zip'))
 		.pipe(gulp.dest('./ship'))
 })
