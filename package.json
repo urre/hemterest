@@ -1,6 +1,6 @@
 {
 	"name": "hemterest",
-	"version": "1.0.0",
+	"version": "1.3.0",
 	"description": "Beautify Hemnet.se with Pinterest style galleries instead of the default image slider.",
 	"main": "./src/gulpfile.js",
 	"scripts": {
@@ -10,7 +10,9 @@
 		"type": "git",
 		"url": "git+https://github.com/urre/hemterest.git"
 	},
-	"keywords": ["hemnet"],
+	"keywords": [
+		"hemnet"
+	],
 	"author": "Urban Sanden",
 	"license": "MIT",
 	"bugs": {

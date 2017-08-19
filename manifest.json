@@ -2,9 +2,13 @@
 	"manifest_version": 2,
 	"name": "Hemterest",
 	"description": "Beautify Hemnet with Pinterest style galleries instead of the default image slider.",
-	"version": "0.1.1",
-	"permissions": ["*://*.hemnet.se/*"],
-	"web_accessible_resources": ["src/css/hemterest.css"],
+	"version": "1.3.0",
+	"permissions": [
+		"*://*.hemnet.se/*"
+	],
+	"web_accessible_resources": [
+		"src/css/hemterest.css"
+	],
 	"icons": {
 		"16": "./src/icons/icon-16.png",
 		"48": "./src/icons/icon-48.png",
@@ -18,13 +22,21 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["*://*.hemnet.se/*"],
-			"js": ["src/js/hemterest.js"],
+			"matches": [
+				"*://*.hemnet.se/*"
+			],
+			"js": [
+				"src/js/hemterest.js"
+			],
 			"run_at": "document_idle"
 		},
 		{
-			"matches": ["*://*.hemnet.se/*"],
-			"css": ["src/css/hemterest.css"]
+			"matches": [
+				"*://*.hemnet.se/*"
+			],
+			"css": [
+				"src/css/hemterest.css"
+			]
 		}
 	]
 }
