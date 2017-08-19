@@ -8,16 +8,8 @@ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of th
 
 ## Install from Google Web Store
 + [Install](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
-+ + Enjoy the improved [hemnet.se](http://hemnet.se) object pages
-
-### Install manually
-
-+ Clone repo or download zip
-+ Open upp Google Chrome Extensions. Window → Extensions. Or goto `chrome://extensions/`
-+ Click Developer mode
-+ Click Load unpacked extension
-+ Navigate to the folder where you saved it
 + Enjoy the improved [hemnet.se](http://hemnet.se) object pages
+
 
 ### Changelog
 + 2017-08-18: Published the Extension to Chrome Web Store
