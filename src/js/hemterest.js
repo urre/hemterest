@@ -45,7 +45,7 @@ const createGrid = urls => {
 		wrapper.appendChild(itemFigure)
 	}
 
-	document.querySelector('#page-content').prepend(wrapper)
+	document.querySelector('.page-content').prepend(wrapper)
 }
 
 if (document.querySelector('.property__container')) {

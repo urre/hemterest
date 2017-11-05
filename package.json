@@ -1,6 +1,6 @@
 {
 	"name": "hemterest",
-	"version": "1.3.0",
+	"version": "1.4.1",
 	"description": "Beautify Hemnet.se with Pinterest style galleries instead of the default image slider.",
 	"main": "./src/gulpfile.js",
 	"scripts": {

@@ -5,7 +5,12 @@ path = require('path')
 gulp.task('zip', function() {
 	return gulp
 		.src(
-			['./src/css/hemterest.css', './src/js/hemterest.js', 'manifest.json'],
+			[
+				'./src/icons/*.png',
+				'./src/css/hemterest.css',
+				'./src/js/hemterest.js',
+				'manifest.json'
+			],
 			{
 				base: '.'
 			}
