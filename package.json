@@ -18,5 +18,9 @@
 	"bugs": {
 		"url": "https://github.com/urre/hemterest/issues"
 	},
-	"homepage": "https://github.com/urre/hemterest#readme"
+	"homepage": "https://github.com/urre/hemterest#readme",
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-zip": "^4.0.0"
+	}
 }
