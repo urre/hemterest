@@ -1,111 +1,81 @@
 .page-wrapper {
-	overflow: visible !important;
+    overflow: visible !important;
 }
 
 .hemterest-wrapper {
-	margin: 0 -100%;
-	margin: 0 calc(50% - 50vw);
-	margin-bottom: 1rem;
-	columns: 50% 4;
-	column-gap: 10px;
-
-
-}
-
-@media and (min-width: 60em) {
-	.hemterest-wrapper {
-		columns: 33.333% 3;
-	}
-}
-
-.hemterest-wrapper figure {
-	/*display: block;*/
-	border-radius: 2px;
-	/*border: 1px solid #d9d9d9;*/
-	/*box-shadow: 0 1px 2px rgba(0,0,0,.15);*/
-	background-color: white;
-	/*padding: 1rem;*/
-	/*padding-bottom: 1rem;*/
-	transition: all .4s ease-in-out;
-	column-break-inside: avoid;
-	backface-visibility: hidden;
-	/*vertical-align: top;*/
-	flex-basis: 50%;
-	width: 50%;
-	flex: 1 auto;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-}
-
-.hemterest-wrapper figure img {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
-	padding: 0;
-	object-fit: cover;
-}
-
-@media (min-width: 40em) {
-	.hemterest-wrapper figure {
-		flex-basis: 33.333%;
-		width: 33.333%;
-	}
-}
-
-.hemterest-wrapper figure img {
-	max-width: 100%;
-	height: auto;
-}
-
-.hemterest-wrapper figure:last-child {
-	position: relative;
-}
-
-.hemterest-wrapper figure:last-child div {
-	position: absolute;
-	background-color: rgba(0,0,0,.75);
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	padding-top: 30%;
-	left: 0;
-	top: 0;
-	color: white;
-	font-family: 'Hemnet Slab',Georgia,Times New Roman,Times,Lucidabright,serif;
-	font-weight: 700;
-	font-size: 1.5rem;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
 @media (min-width: 60em) {
-	.hemterest-wrapper figure:last-child div {
-		font-size: 3.5rem;
-	}
+    .hemterest-wrapper {}
 }
 
-.hemterest-wrapper .hemterest-price p {
-	margin-bottom: 0;
+.hemterest-wrapper figure {
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    backface-visibility: hidden;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
-.hemterest-wrapper .hemterest-price .ribbon--ongoing-bidding {
-	font-weight: normal;
-	float: none;
-	margin: 0;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+.hemterest-wrapper figure img {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    width: 600px;
 }
 
 .carousel {
-	height: 160px;
-	background: white;
+    height: 160px;
+    background: white;
 }
 
 .carousel__button--next,
 .carousel__button--prev {
-	display: none;
+    display: none;
 }
 
 .carousel__wrapper img {
-	display: none !important;
+    display: none !important;
+}
+
+.hemterest-button {
+    position: absolute;
+    top: calc(55px + 1rem);
+    left: 1rem;
+    z-index: 10;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    font: 1.5rem Open Sans, Helvetica, Arial, sans-serif;
+    padding: 10px 16px;
+    max-width: 100%;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition: border-color 0.1s linear;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-color: #1493bc;
+    border-color: #1493bc;
+    color: #fff;
+}
+
+.hemterest-button:hover {
+    color: white;
+}
+
+.hemterest-button.hemterest-price {
+	    font-size: 3rem;
 }

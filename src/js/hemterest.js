@@ -1,10 +1,10 @@
 const findImages = () => {
-	const images = document.getElementsByTagName('img')
+	const carouselImages = document.querySelector('[data-images]')
+
+	const images = JSON.parse(carouselImages.dataset.images)
 	let imageUrls = []
 	for (let image of images) {
-		image.src && image.src.includes('itemgallery')
-			? imageUrls.push(image.src)
-			: ''
+		imageUrls.push(image.url)
 	}
 
 	return imageUrls
@@ -13,14 +13,18 @@ const findImages = () => {
 const addPrice = () => {
 	const lastImage = document.querySelector('.hemterest-wrapper > figure')
 		.parentElement.firstChild
+	const firstImage = document.querySelector('.hemterest-wrapper > figure')
+		.parentElement.firstChild
 	const lastImageClone = lastImage.cloneNode(true)
 	document.querySelector('.hemterest-wrapper').appendChild(lastImageClone)
 
-	const priceTag = document.createElement('div')
+	const priceTag = document.createElement('a')
 	priceTag.innerHTML = document.querySelector('.property__price').innerHTML
+	priceTag.classList.add('hemterest-button')
 	priceTag.classList.add('hemterest-price')
+	priceTag.href = '#item-info'
 
-	lastImageClone.appendChild(priceTag)
+	document.querySelector('.hemterest-wrapper').parentElement.prepend(priceTag)
 }
 
 const cloneRibbon = () => {

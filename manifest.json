@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Hemterest",
 	"description": "Beautify Hemnet with Pinterest style galleries instead of the default image slider.",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"permissions": [
 		"*://*.hemnet.se/*"
 	],

@@ -12,6 +12,7 @@ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of th
 
 
 ### Changelog
++ 2018-08-03: Show all images in the carousel as gallery images. Added large price in the top left corner. Using css-grid for better columns
 + 2017-08-18: Published the Extension to Chrome Web Store
 + 2017-05-21: Better handling of figure items, no heights in css. Nicer price design.
 + 2017-05-19: Add ribbon to price field, css width fix for wrapper
