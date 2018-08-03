@@ -4,7 +4,7 @@
 
 Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider. For easier and faster overview of the default (up to) 6 images.
 
-![Hemterest](https://res.cloudinary.com/urre/image/upload/v1495398154/ngxk1ca6rvjkfvqp0pnn.png)
+![Hemterest](https://res.cloudinary.com/urre/image/upload/v1533305748/mm6uswkv3cxao7eubhk3.png)
 
 ## Install from Google Web Store
 + [Install](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
