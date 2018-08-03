@@ -2,13 +2,13 @@
 
 ![icon](./src/icons/icon-48.png)
 
-Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider. For easier and faster overview of the default (up to) 6 images.
+🖼️ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider. A nicer browsing experience!
 
 ![Hemterest](https://res.cloudinary.com/urre/image/upload/v1533305748/mm6uswkv3cxao7eubhk3.png)
 
-## Install from Google Web Store
-+ [Install](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
-+ Enjoy the improved [hemnet.se](http://hemnet.se) object pages
+## Install
++ [Install from Google Web Store](https://chrome.google.com/webstore/detail/hemterest/afalfihighhjdfeelnpdfjemgeoojngl)
++ Enjoy the improved [hemnet.se](http://hemnet.se) object pages. Just reload the page!
 
 
 ### Changelog
