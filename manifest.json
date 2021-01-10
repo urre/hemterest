@@ -28,7 +28,7 @@
 			"js": [
 				"src/js/hemterest.js"
 			],
-			"run_at": "document_idle"
+			"run_at": "document_end"
 		},
 		{
 			"matches": [

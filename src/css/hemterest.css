@@ -5,11 +5,13 @@
 .hemterest-wrapper {
     background-color: #333;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+    width: 100vw;
 }
 
-@media (min-width: 60em) {
-    .hemterest-wrapper {}
+.hemterest-wrapper-3,
+.hemterest-wrapper-4 {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 }
 
 .hemterest-wrapper figure {
@@ -27,55 +29,12 @@
 .hemterest-wrapper figure img {
     display: block;
     object-fit: cover;
+    object-position: 50% 50%;
     height: 400px;
-    width: 600px;
+    width: 100%;
 }
 
-.carousel {
-    height: 160px;
-    background: white;
-}
-
-.carousel__button--next,
-.carousel__button--prev {
-    display: none;
-}
-
-.carousel__wrapper img {
-    display: none !important;
-}
-
-.hemterest-button {
-    position: absolute;
-    top: calc(55px + 1rem);
-    left: 1rem;
-    z-index: 10;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    cursor: pointer;
-    font: 1.5rem Open Sans, Helvetica, Arial, sans-serif;
-    padding: 10px 16px;
-    max-width: 100%;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    transition: border-color 0.1s linear;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-image: none;
-    background-color: #1493bc;
-    border-color: #1493bc;
-    color: #fff;
-}
-
-.hemterest-button:hover {
-    color: white;
-}
-
-.hemterest-button.hemterest-price {
-	    font-size: 3rem;
+.property-gallery__image-container {
+    height: 0px !important;
+    overflow: hidden !important;
 }
