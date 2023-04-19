@@ -1,6 +1,8 @@
 # Hemterest
 
-![icon](./src/icons/icon-48.png)
+## 🚩 Discontinued. No longer working.
+
+---
 
 🖼️ Beautify [Hemnet](http://hemnet.se) with Pinterest style galleries instead of the default image slider. A nicer browsing experience!
 
